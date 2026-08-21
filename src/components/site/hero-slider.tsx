@@ -106,7 +106,7 @@ export function HeroSlider({
         className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(196,154,77,0.18),transparent_60%)]"
       />
 
-      <div className="absolute top-1/2 right-5 z-10 flex -translate-y-1/2 flex-col items-center gap-5 sm:right-8 sm:gap-6">
+      <div className="absolute inset-x-0 bottom-5 z-10 flex flex-row items-center justify-center gap-5 sm:inset-x-auto sm:top-1/2 sm:right-8 sm:bottom-auto sm:flex-col sm:-translate-y-1/2 sm:gap-6">
         {SLIDES.map((_, i) => {
           const isActive = i === index;
           return (
